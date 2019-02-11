@@ -29,6 +29,7 @@ public class DateTimeActivity extends AppCompatActivity {
                 processDatePickerResult(year, month, dayOfMonth);
             }
         }, year, month, day);
+
         datePickerDialog.show();
 //        DialogFragment newFragment = new DatePickerFragment();
 //        newFragment.show(getSupportFragmentManager(), getString(R.string.date_picker));
