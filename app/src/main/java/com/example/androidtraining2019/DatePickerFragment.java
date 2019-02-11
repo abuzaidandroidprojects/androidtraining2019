@@ -16,7 +16,6 @@ import java.util.Calendar;
  */
 public class DatePickerFragment extends DialogFragment
         implements DatePickerDialog.OnDateSetListener {
-
     /**
      * Creates the date picker dialog with the current date from Calendar.
      * @param savedInstanceState    Saved instance
