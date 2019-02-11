@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<group >
+    <item
+        android:id="@+id/mi_first_item"
+        android:icon="@drawable/first_item"
+        android:title="Action One"
+        android:orderInCategory="2"
+        app:showAsAction="ifRoom"
+        />
+    <item
+        android:id="@+id/mi_second_item"
+        android:icon="@drawable/first_item"
+        android:title="Action 2"
+        android:orderInCategory="2"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/mi_3_item"
+        android:icon="@drawable/first_item"
+        android:title="Thi Item"
+        android:orderInCategory="2"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/mi_4_item"
+        android:icon="@drawable/first_item"
+        android:title="Fou I"
+        android:orderInCategory="2"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/mi_5_item"
+        android:icon="@drawable/first_item"
+        android:title="Sixth I"
+        android:orderInCategory="2"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/mi_6_item"
+        android:icon="@drawable/first_item"
+        android:title="7th Item"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/mi_7_item"
+        android:icon="@drawable/first_item"
+        android:title="7th Item"
+        android:orderInCategory="2"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/mi_8_item"
+        android:icon="@drawable/first_item"
+        android:title="7th Item"
+        android:orderInCategory="2"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/mi_9_item"
+        android:icon="@drawable/first_item"
+        android:title="7th Item"
+        android:orderInCategory="2"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/mi_10_item"
+        android:icon="@drawable/first_item"
+        android:title="7th Item"
+        android:orderInCategory="2"
+        android:iconTintMode="screen"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/mi_11_item"
+        android:icon="@drawable/first_item"
+        android:title="11th Item"
+        android:orderInCategory="1"
+        app:showAsAction="ifRoom"/>
+</group>
+
+</menu>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:title="MenuGroup"
+        android:id="@+id/action_settings"
+        android:icon="@android:drawable/ic_dialog_dialer"
+        android:orderInCategory="100"
+        app:showAsAction="always">
+        <menu>
+            <item
+                android:id="@+id/add_source"
+                android:icon="@android:drawable/ic_input_add"
+                android:orderInCategory="100"
+                app:showAsAction="never"
+                android:title="Add Source"/>
+            <item
+                android:id="@+id/channel_setup"
+                android:icon="@android:drawable/ic_menu_set_as"
+                android:orderInCategory="100"
+                app:showAsAction="never"
+                android:title="Set as"/>
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/time"
+        android:orderInCategory="99"
+        app:showAsAction="always"
+        android:title="Time Title"/>
+    <item
+        android:id="@+id/weather"
+        android:icon="@android:drawable/button_onoff_indicator_on"
+        android:orderInCategory="98"
+        app:showAsAction="always"
+        android:title="Wether Title"/>
+    <item
+        android:id="@+id/search"
+        app:actionViewClass="android.widget.SearchView"
+        android:icon="@android:drawable/ic_menu_search"
+        android:orderInCategory="97"
+        app:showAsAction="collapseActionView|always"
+        android:title="Search"
+        />
+</menu>

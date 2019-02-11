@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_scroll_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_scroll_view"
+            android:onClick="onClick"/>
+
+        <Button
+            android:id="@+id/btn_start_activity_result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_start_activity_for_result"
+            android:onClick="onClick"/>
+        <Button
+            android:id="@+id/btn_saved"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Start Saved "
+            android:onClick="onClick"/>
+
+        <Button
+            android:id="@+id/btn_datetime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Datetime Picker Dialogs"
+            android:onClick="onClick"/>
+        <Button
+            android:id="@+id/btn_startchild"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Start Child 1"
+            android:onClick="onClick"/>
+        <Button
+            android:id="@+id/btn_navDrawerFromScratchActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Start Navdrawer From Scratch"
+            android:onClick="onClick"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_popup"
+            android:src="@android:drawable/ic_menu_agenda"/>
+        <Button
+            android:id="@+id/btn_tabbedactivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Start Tabbed Activity"
+            android:onClick="onClick"/>
+        <Button
+            android:id="@+id/btn_tabbedactionactivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Start Tabbed Action Bar Activity"
+            android:onClick="onClick"/>
+        <Button
+            android:id="@+id/btn_mani_nav_drawer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Start Tabbed Action Bar Activity"
+            android:onClick="onClick"/>
+        <Button
+            android:id="@+id/btn_drawables"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Start Drawables Activity"
+            android:onClick="onClick"/>
+        <Button
+            android:id="@+id/btn_master_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Start Master Details Activity"
+            android:onClick="onClick"/>
+
+    </LinearLayout>
+</ScrollView>

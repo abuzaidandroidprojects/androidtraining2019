@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:title="Item"
+        android:titleCondensed="@string/finish"
+        android:icon="@drawable/first_item"
+        android:id="@+id/first_item"
+
+        app:showAsAction="collapseActionView"
+        />
+    <item android:title="Item 2"
+        android:id="@+id/item2"
+        android:icon="@android:drawable/arrow_down_float"
+        />
+    <item android:title="Item 3"
+        android:id="@+id/item3"/>
+</menu>

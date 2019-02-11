@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.androidtraining2019">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MasterdetailsemployeeListActivity"
+            android:label="@string/title_masterdetailsemployee_list"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.androidtraining2019.MainActivity" />
+        </activity>
+        <activity
+            android:name=".MasterdetailsemployeeDetailActivity"
+            android:label="@string/title_masterdetailsemployee_detail"
+            android:parentActivityName=".MasterdetailsemployeeListActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.androidtraining2019.MasterdetailsemployeeListActivity" />
+        </activity>
+        <activity android:name=".DrawableResources" />
+        <activity
+            android:name=".MainNavDrawer"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".TabbedLayout_5" />
+        <activity
+            android:name=".TabbedActivityActionBar"
+            android:label="@string/title_activity_tabbed_action_bar"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.androidtraining2019.MainActivity" />
+        </activity>
+        <activity
+            android:name=".TabbedActivity"
+            android:label="@string/title_activity_tabbed"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.androidtraining2019.MainActivity" />
+        </activity>
+        <activity android:name=".NavDrawerFromScratchActivity" />
+        <activity
+            android:name=".SuperActivity"
+            android:label="@string/title_activity_super"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.androidtraining2019.MainActivity" />
+        </activity>
+        <activity android:name=".DateTimeActivity" />
+        <activity
+            android:name=".UserInfoEditor"
+            android:label="@string/title_activity_user_info_editor"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".UserInfo"
+            android:label="@string/title_activity_user_info"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".NavDrawer"
+            android:label="@string/title_activity_user_info_editor"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".ScrollView"
+            android:label="@string/title_activity_scroll_view"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.androidtraining2019.MainNavDrawer" />
+        </activity>
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

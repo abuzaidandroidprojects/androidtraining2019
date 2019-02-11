@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">التطبيق الكامل للتدريب</string>
+    <string name="btn_scroll_view">سكرول فيو</string>
+    <string name="title_activity_user_info">معلومات المستخدم</string>
+    <string name="title_activity_user_info_editor">تعديل بيانات المستخدم</string>
+    <string name="name">الاسم</string>
+    <string name="hint_type_your_name">اكتب اسمك</string>
+    <string name="age">العمر</string>
+    <string name="hint_your_age">عمرك</string>
+    <string name="is_single">هل أنت أعزب</string>
+    <string name="yes">نعم</string>
+    <string name="no">لا</string>
+    <string name="address">العنوان</string>
+    <string name="hint_your_address">عنوانك</string>
+    <string name="save">حفظ</string>
+    <string name="long_text">ما هو أندرويد هو نظام تشغيل خاص بالهواتف المحمولة والذي قامت شركة جوجل بتطويره وقد بُني هذا النظام على نظام التشغيل لينكس، وتملك جوجل حق الملكية لهذا النظام ذي المصدر المفتوح حيث تقوم بفرض رسوم مالية على الشركات المصنعة للأجهزة الخلوية والتي تستخدم نظام التشغيل أندرويد في أجهزتها، وقد امتد هذا النظام ليشمل بعض الأجهزة الإلكترونية الأخرى غير الهواتف الخلوية كالكاميرات وحتى بعض أنواع الثلاجات، وبهدف تطوير هذا النظام قامت شركة جوجل بتشكيل مجموعة تحت مسمى Open Handset Alliance وتشمل عدد من شركات الاتصالات وبعض البرمجيات والأجهزة كما وتهدف هذه المجموعة إلى جني المزيد من الأرباح المادية جراء قيامها بتطوير هذا النظام، وتعد شاشة اللمس إحدى ميزات هذا النظام حيث إنه يدعم استخدامها على الأجهزة
+
+</string>
+    <string name="finish">انهاء</string>
+    <string name="edit">تعديل</string>
+    <string name="your_info">بياناتك...</string>
+    <string name="choose_datetime">اختر التاريخ والوقت</string>
+    <string name="date_button">التاريخ</string>
+    <string name="time_button">الوقت</string>
+    <string name="date_picker">اختيار التاريخ</string>
+    <string name="time_picker">اختيار الوقت</string>
+    <string name="date">التاريخ:</string>
+    <string name="time">الوقت:</string>
+    <string name="toast">توست</string>
+    <string name="settings">الإعدادات</string>
+    <string name="share_text_with">شارك مع ...</string>
+    <string name="firsrt_item">أول عنصر</string>
+    <string name="navigation_drawer_open">افتح درج التنقل</string>
+    <string name="navigation_drawer_close">إغلاق درج التنقل</string>
+    <string name="action_settings">الإعدادات</string>
+    <string name="Open">فتح</string>
+    <string name="Close">إغلاق</string>
+    <string name="tab_text_1">علامة تبويب 1</string>
+    <string name="tab_text_2">علامة تبويب 2</string>
+    <string name="tab_text_3">علامة تبويب 3</string>
+</resources>

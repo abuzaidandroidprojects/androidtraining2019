@@ -1,0 +1,88 @@
+<resources>
+    <string name="app_name">Training Home</string>
+    <string name="btn_scroll_view">Scroll View</string>
+    <string name="btn_start_activity_for_result">Start Activity For Result and Menu
+    </string>
+    <string name="title_activity_scroll_view">ScrollView</string>
+    <string name="title_activity_user_info">UserInfo</string>
+    <string name="title_activity_user_info_editor">UserInfoEditor</string>
+    <string name="name">Name</string>
+    <string name="hint_type_your_name">type your name</string>
+    <string name="age">Age</string>
+    <string name="hint_your_age">your age</string>
+    <string name="is_single">Is Single</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="address">Address</string>
+    <string name="hint_your_address">Your address</string>
+    <string name="save">Save</string>
+    <string name="long_text">
+       Web:  https://developer.android.com/ \n
+      Mobile:   0568474940 \n
+      Email:   mohammad.kaiedd@gmail.com
+\n\n
+     <b>   Build your first app</b> \n
+The following pages teach you how to build a simple Android app. You’ll learn how to create a "Hello World" project with Android Studio and run it. Then, you\'ll create a new interface for the app that takes some user input and opens a second screen in the app.
+
+But before you start, there are two fundamental concepts you should understand about Android apps:
+
+       
+
+<i>Apps provide multiple entry points</i>
+Android apps are built as a combination of components that can be invoked individually. For example, an activity is a type of app component that provides a user interface.
+
+The "main" activity is what starts when the user taps your app icon, but you can take the user straight into a different activity from other places, such as from a notification or even from a different app.
+
+Other components such as broadcast receivers and services also allow your app to perform background tasks without a user interface.
+
+After you build your first app, learn more about the other components at App Fundamentals.
+
+Apps adapt to different devices
+Android allows you to provide different resources for different devices. For example, you can create different layouts for different screen sizes. Then the system determines which layout to use based on the current device\'s screen size.
+
+If any of your app\'s features need specific hardware, such as a camera, you can query whether the device has that hardware at runtime and then disable the corresponding features if not. You can also set some features as required so Google Play won\'t allow installation on devices without them.
+
+After you build your first app, learn more about device configurations at Device Compatibility.
+
+    </string>
+    <string name="finish">Finish</string>
+    <string name="edit">Edit</string>
+    <string name="your_info">Your info ...</string>
+    <array name="universities_list">
+        <item>Khadoori</item>
+        <item>Alnajah</item>
+        <item>Hebron</item>
+        <item>PPU</item>
+        <item>Open University</item>
+    </array>
+
+
+    <string name="choose_datetime">Choose the date and time:</string>
+    <string name="date_button">Date</string>
+    <string name="time_button">Time</string>
+    <string name="date_picker">datePicker</string>
+    <string name="time_picker">timePicker</string>
+    <string name="date">"Date: "</string>
+    <string name="time">"Time: "</string>
+    <string name="toast">Toast</string>
+    <string name="settings">Settings</string>
+    <string name="share_text_with">Share text with ... </string>
+    <string name="firsrt_item">Firsrt Item</string>
+    <string name="title_activity_super">SuperActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="Open">Open</string>
+    <string name="Close">Close</string>
+    <string name="title_activity_tabbed">TabbedActivity</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_tabbed_action_bar">TabbedActivityActionBar</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="tab_text_3">Tab 3</string>
+    <string name="title_masterdetailsemployee_list">master_details_employes</string>
+    <string name="title_masterdetailsemployee_detail">master_details_employee Detail</string>
+</resources>

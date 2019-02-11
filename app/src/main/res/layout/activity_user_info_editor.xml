@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserInfoEditor">
+
+    <TextView
+        android:id="@+id/txtvu_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/name"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignBaseline="@id/edtxt_name"
+        android:layout_alignParentStart="true"/>
+
+    <EditText
+        android:id="@+id/edtxt_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/txtvu_name"
+        android:inputType="textPersonName"
+        android:autofillHints="@string/hint_type_your_name"
+        android:layout_toEndOf="@+id/txtvu_name" />
+    <TextView
+        android:id="@+id/txtvu_age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtvu_name"
+        android:text="@string/age"
+        android:layout_alignBaseline="@id/edttxt_age"
+        />
+
+    <EditText
+        android:id="@+id/edttxt_age"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_your_age"
+        android:inputType="number"
+        android:layout_toRightOf="@id/txtvu_age"
+        android:layout_below="@id/edtxt_name"
+        android:autofillHints=""
+        android:layout_toEndOf="@id/txtvu_age" />
+
+    <TextView
+        android:id="@+id/txtvu_is_single"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/is_single"
+        android:layout_below="@id/txtvu_age"
+        android:layout_alignBaseline="@id/radiogroup_is_single"
+        android:layout_marginTop="15dp"/>
+
+    <RadioGroup
+        android:id="@+id/radiogroup_is_single"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/txtvu_is_single"
+        android:layout_below="@id/edttxt_age"
+        android:layout_toEndOf="@id/txtvu_is_single">
+
+        <RadioButton
+            android:id="@+id/radio_yes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/yes" />
+
+        <RadioButton
+            android:id="@+id/radio_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/no" />
+    </RadioGroup>
+    <TextView
+        android:id="@+id/txtvu_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/address"
+        android:layout_below="@id/txtvu_is_single"
+        android:layout_alignBaseline="@id/edttxt_address"/>
+
+    <EditText
+        android:id="@+id/edttxt_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_your_address"
+        android:inputType="text"
+        android:layout_toRightOf="@id/txtvu_address"
+        android:layout_below="@id/radiogroup_is_single"
+        android:layout_toEndOf="@id/txtvu_address"
+        android:autofillHints="" />
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/save"
+        android:layout_alignParentBottom="true"
+
+        />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/edttxt_address"
+        android:scrollbars="vertical">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="I'm from ... " />
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/universities_list"
+                android:dropDownSelector="@color/colorPrimary"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Show Alert Dialog"
+                android:onClick="showAlertDialog"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+    </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </TableRow>
+    </TableLayout>
+
+
+</RelativeLayout>
