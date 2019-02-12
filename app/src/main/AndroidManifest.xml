@@ -81,7 +81,9 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.androidtraining2019.MainNavDrawer" />
         </activity>
-        <activity android:name=".MainActivity">
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

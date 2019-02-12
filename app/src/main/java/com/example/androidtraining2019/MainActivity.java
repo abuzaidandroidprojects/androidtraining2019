@@ -1,6 +1,8 @@
 package com.example.androidtraining2019;
 
 import android.content.Intent;
+import android.content.res.Configuration;
+import android.content.res.Resources;
 import android.support.v4.app.NavUtils;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -8,8 +10,13 @@ import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CompoundButton;
 import android.widget.ImageButton;
 import android.widget.PopupMenu;
+import android.widget.Switch;
+import android.widget.ToggleButton;
+
+import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity{
     ImageButton mButton ;
@@ -33,6 +40,29 @@ public class MainActivity extends AppCompatActivity{
                 });
                 popup.show();
 
+            }
+        });
+        ToggleButton sw = (ToggleButton) findViewById(R.id.switch1);
+        sw.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                String language = "en";
+                if (buttonView.isChecked()) {
+                    language = "ar";
+                    Locale locale = new Locale(language);
+                    Locale.setDefault(locale);
+                    Resources res = getResources();
+                    Configuration config = new Configuration(res.getConfiguration());
+                    config.locale = locale;
+                    res.updateConfiguration(config, res.getDisplayMetrics());
+                } else {
+                    Locale locale = new Locale(language);
+                    Locale.setDefault(locale);
+                    Resources res = getResources();
+                    Configuration config = new Configuration(res.getConfiguration());
+                    config.locale = locale;
+                    res.updateConfiguration(config, res.getDisplayMetrics());
+                }
             }
         });
     }
@@ -80,4 +110,26 @@ public class MainActivity extends AppCompatActivity{
 
         }
     }
+
+    public void changeLanguage(View view) {
+        String language = "en";
+        Switch sw = (Switch) view;
+        if (sw.isChecked()) {
+            language = "ar";
+            Locale locale = new Locale(language);
+            Locale.setDefault(locale);
+            Resources res = getResources();
+            Configuration config = new Configuration(res.getConfiguration());
+            config.locale = locale;
+            res.updateConfiguration(config, res.getDisplayMetrics());
+        } else {
+            Locale locale = new Locale(language);
+            Locale.setDefault(locale);
+            Resources res = getResources();
+            Configuration config = new Configuration(res.getConfiguration());
+            config.locale = locale;
+            res.updateConfiguration(config, res.getDisplayMetrics());
+        }
+    }
+
 }
