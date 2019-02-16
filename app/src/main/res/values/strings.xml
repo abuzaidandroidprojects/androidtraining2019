@@ -85,4 +85,11 @@ After you build your first app, learn more about device configurations at Device
     <string name="tab_text_3">Tab 3</string>
     <string name="title_masterdetailsemployee_list">master_details_employes</string>
     <string name="title_masterdetailsemployee_detail">master_details_employee Detail</string>
+    <string name="power_connected">Power connected!</string>
+    <string name="power_disconnected">Power disconnected!</string>
+    <string name="custom_broadcast_toast">Custom Broadcast Received</string>
+    <string name="send_custom_broadcast">Send Custom Broadcast</string>
+    <string name="receiver_on">Receiver On</string>
+    <string name="receiver_off">Receiver Off</string>
+    <string name="unknown_action">unknown intent action</string>
 </resources>

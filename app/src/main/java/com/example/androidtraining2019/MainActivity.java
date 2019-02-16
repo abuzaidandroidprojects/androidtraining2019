@@ -108,6 +108,9 @@ public class MainActivity extends AppCompatActivity{
             case R.id.btn_loadimageactivity:
                 startActivity(new Intent(this,LoadImageActivity.class));
                 break;
+            case R.id.btn_loadbroadcastativity:
+                startActivity(new Intent(this,BroadcastActivity.class));
+                break;
 
 
         }
