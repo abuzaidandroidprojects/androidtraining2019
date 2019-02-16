@@ -11,7 +11,7 @@
         android:id="@+id/button8"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Load Image From Web"
+        android:text="Load Image From Web using AsyncTask"
         android:onClick="loadImageFromWeb"/>
 
     <TextView
@@ -30,8 +30,19 @@
         android:id="@+id/button9"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Loader"
+        android:text="Load Image From Web using AsyncTaskLoader"
         android:onClick="loadFromLoader"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Reload Image From Web using AsyncTaskLoader"
+        android:onClick="reLoadFromLoader"/>
+
+    <TextView
+        android:id="@+id/txtvu_loader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
 
     <ImageView
         android:id="@+id/img_load"
