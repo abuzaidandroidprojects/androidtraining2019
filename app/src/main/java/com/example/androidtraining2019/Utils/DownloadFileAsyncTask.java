@@ -44,21 +44,21 @@ public class DownloadFileAsyncTask extends AsyncTask<String,String, Bitmap> {
 
         try {
             publishProgress("doInBackground started ...");
-            Thread.sleep(1000);
+            Thread.sleep(5000);
             URL url = new URL(strings[0]);
             HttpURLConnection urlcon = (HttpURLConnection) url.openConnection();
             publishProgress("Open the connection ...");
-            Thread.sleep(1000);
+            Thread.sleep(5000);
             urlcon.setDoInput(true);
             urlcon.connect();
             publishProgress("Connected...");
-            Thread.sleep(1000);
+            Thread.sleep(5000);
             InputStream in = urlcon.getInputStream();
             publishProgress("Input stream getted ...");
-            Thread.sleep(1000);
+            Thread.sleep(5000);
             Bitmap mIcon = BitmapFactory.decodeStream(in);
             publishProgress("Loading Done!");
-            Thread.sleep(1000);
+            Thread.sleep(5000);
             return  mIcon;
         }catch (Exception ex){
             Log.e(DownloadFileAsyncTask.class.getSimpleName(),ex.getMessage());

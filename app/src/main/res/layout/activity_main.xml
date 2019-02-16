@@ -87,13 +87,6 @@
             android:text="Start Drawables Activity"
             android:onClick="onClick"/>
         <Button
-            android:id="@+id/btn_master_details"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Start Master Details Activity"
-            android:onClick="onClick"/>
-
-        <Button
             android:id="@+id/button7"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

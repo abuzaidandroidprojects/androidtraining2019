@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        mButton =(ImageButton) findViewById(R.id.button_popup);
+        mButton = findViewById(R.id.button_popup);
         mButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity{
 
             }
         });
-        ToggleButton sw = (ToggleButton) findViewById(R.id.switch1);
+        ToggleButton sw = findViewById(R.id.switch1);
         sw.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
@@ -104,9 +104,6 @@ public class MainActivity extends AppCompatActivity{
                 break;
             case R.id.btn_drawables:
                 startActivity(new Intent(this,DrawableResources.class));
-                break;
-            case R.id.btn_master_details:
-                startActivity(new Intent(this,MasterdetailsemployeeListActivity.class));
                 break;
             case R.id.btn_loadimageactivity:
                 startActivity(new Intent(this,LoadImageActivity.class));
