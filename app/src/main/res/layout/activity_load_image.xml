@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoadImageActivity"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Load Image From Web"
+        android:onClick="loadImageFromWeb"/>
+
+    <TextView
+        android:id="@+id/txtvu_progessresult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+
+    <ImageView
+        android:id="@+id/img_frominternet"
+        android:layout_width="match_parent"
+        android:layout_height="215dp"
+        app:srcCompat="@drawable/blue" />
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Loader"
+        android:onClick="loadFromLoader"/>
+
+    <ImageView
+        android:id="@+id/img_load"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/button" />
+</LinearLayout>

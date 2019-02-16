@@ -93,5 +93,18 @@
             android:text="Start Master Details Activity"
             android:onClick="onClick"/>
 
+        <Button
+            android:id="@+id/button7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Download File From Web" />
+
+        <Button
+            android:id="@+id/btn_loadimageactivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onClick"
+            android:text="Call Load Image Activity" />
+
     </LinearLayout>
 </ScrollView>

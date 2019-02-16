@@ -7,7 +7,8 @@
     tools:context=".NavDrawerFromScratchActivity"
     android:id="@+id/activity_main"
     android:background="@android:color/holo_green_dark"
-    android:fitsSystemWindows="true">
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">

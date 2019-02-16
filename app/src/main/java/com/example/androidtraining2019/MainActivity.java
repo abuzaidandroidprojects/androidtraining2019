@@ -65,6 +65,8 @@ public class MainActivity extends AppCompatActivity{
                 }
             }
         });
+
+
     }
 
 
@@ -105,6 +107,9 @@ public class MainActivity extends AppCompatActivity{
                 break;
             case R.id.btn_master_details:
                 startActivity(new Intent(this,MasterdetailsemployeeListActivity.class));
+                break;
+            case R.id.btn_loadimageactivity:
+                startActivity(new Intent(this,LoadImageActivity.class));
                 break;
 
 
