@@ -87,12 +87,6 @@
             android:text="Start Drawables Activity"
             android:onClick="onClick"/>
         <Button
-            android:id="@+id/button7"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Download File From Web" />
-
-        <Button
             android:id="@+id/btn_loadimageactivity"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -104,6 +98,29 @@
             android:layout_height="wrap_content"
             android:onClick="onClick"
             android:text="Open Broadcast Activity" />
-
+        <Button
+            android:id="@+id/btn_downloadFileUsingService"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onClick"
+            android:text="Download File Using Service" />
+        <Button
+            android:id="@+id/btn_openNotification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onClick"
+            android:text="Open Notification Activity" />
+        <Button
+            android:id="@+id/btn_AlarmActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onClick"
+            android:text="Open Alarm Activity" />
+        <Button
+            android:id="@+id/btn_JobServiceActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onClick"
+            android:text="Open Job Service Activity" />
     </LinearLayout>
 </ScrollView>

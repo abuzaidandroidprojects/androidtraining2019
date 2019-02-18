@@ -3,8 +3,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.androidtraining2019">
 
+    <uses-permission android:name="android.permission.VIBRATE" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -13,7 +16,42 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".BroadcastActivity"></activity>
+        <activity
+            android:name=".SettingsActivity"
+            android:label="@string/title_activity_settings"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.androidtraining2019.MainActivity" />
+        </activity>
+        <activity
+            android:name=".JobServiceActivity"
+            android:label="@string/title_activity_job_service"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <receiver
+            android:name=".Brodcast.AlarmReceiver"
+            android:enabled="true"
+            android:exported="false" />
+
+        <activity android:name=".AlarmActivity" />
+        <activity android:name=".StartNotificationActivity" />
+
+        <receiver
+            android:name=".Brodcast.DownloadFileFinishedReceiver"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".StartIntentServiceActivity" />
+
+        <service
+            android:name=".Services.DownloadService"
+            android:exported="false" />
+        <service
+            android:name=".Services.NotificationJobService"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+
+        <activity android:name=".BroadcastActivity" />
         <activity android:name=".LoadImageActivity" />
 
         <receiver

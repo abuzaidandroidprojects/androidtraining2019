@@ -1,9 +1,13 @@
 package com.example.androidtraining2019;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.content.res.Configuration;
 import android.content.res.Resources;
+import android.os.Build;
 import android.support.v4.app.NavUtils;
+import android.support.v4.view.ViewCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -16,13 +20,33 @@ import android.widget.PopupMenu;
 import android.widget.Switch;
 import android.widget.ToggleButton;
 
+import com.example.androidtraining2019.Utils.NotificationHelper;
+
 import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity{
     ImageButton mButton ;
+    public static final String MyPREFERENCES = "MyPrefs" ;
+    SharedPreferences sharedpreferences;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        sharedpreferences = getSharedPreferences(MyPREFERENCES, Context.MODE_PRIVATE);
+        String local=sharedpreferences.getString("Local","en");
+       if(local.equals("ar")){
+           Locale locale = new Locale("ar");
+           Locale.setDefault(locale);
+           Resources res = getResources();
+           Configuration config = new Configuration(res.getConfiguration());
+           if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN_MR1) {
+               config.setLocale(locale);
+               config.setLayoutDirection(locale);
+           }else{
+               ViewCompat.setLayoutDirection(findViewById(R.id.activity_main), ViewCompat.LAYOUT_DIRECTION_RTL);
+           }
+
+           res.updateConfiguration(config, res.getDisplayMetrics());
+       }
         setContentView(R.layout.activity_main);
         mButton = findViewById(R.id.button_popup);
         mButton.setOnClickListener(new View.OnClickListener() {
@@ -39,7 +63,6 @@ public class MainActivity extends AppCompatActivity{
                     // implement click listener
                 });
                 popup.show();
-
             }
         });
         ToggleButton sw = findViewById(R.id.switch1);
@@ -47,28 +70,36 @@ public class MainActivity extends AppCompatActivity{
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 String language = "en";
+                SharedPreferences.Editor editor = sharedpreferences.edit();
+                Configuration config;
+                Resources res;
+                Locale locale;
                 if (buttonView.isChecked()) {
                     language = "ar";
-                    Locale locale = new Locale(language);
+                    editor.putString("Local", "ar");
+                    locale = new Locale(language);
                     Locale.setDefault(locale);
-                    Resources res = getResources();
-                    Configuration config = new Configuration(res.getConfiguration());
+                    res = getResources();
+                    config = new Configuration(res.getConfiguration());
                     config.locale = locale;
                     res.updateConfiguration(config, res.getDisplayMetrics());
                 } else {
-                    Locale locale = new Locale(language);
+                    editor.putString("Local", "en");
+                    locale = new Locale(language);
                     Locale.setDefault(locale);
-                    Resources res = getResources();
-                    Configuration config = new Configuration(res.getConfiguration());
+                    res = getResources();
+                    config = new Configuration(res.getConfiguration());
                     config.locale = locale;
-                    res.updateConfiguration(config, res.getDisplayMetrics());
+
                 }
-            }
+                editor.apply();
+                editor.commit();
+                res.updateConfiguration(config, res.getDisplayMetrics());
+        }
         });
 
 
     }
-
 
     public void onClick(View v) {
 
@@ -111,6 +142,18 @@ public class MainActivity extends AppCompatActivity{
             case R.id.btn_loadbroadcastativity:
                 startActivity(new Intent(this,BroadcastActivity.class));
                 break;
+            case R.id.btn_downloadFileUsingService:
+                startActivity(new Intent(this,StartIntentServiceActivity.class));
+                break;
+            case R.id.btn_openNotification:
+                startActivity(new Intent(this,StartNotificationActivity.class));
+                break;
+            case R.id.btn_AlarmActivity:
+                startActivity(new Intent(this,AlarmActivity.class));
+                break;
+            case R.id.btn_JobServiceActivity:
+                startActivity(new Intent(this,JobServiceActivity.class));
+                break;
 
 
         }
@@ -136,5 +179,6 @@ public class MainActivity extends AppCompatActivity{
             res.updateConfiguration(config, res.getDisplayMetrics());
         }
     }
+
 
 }
