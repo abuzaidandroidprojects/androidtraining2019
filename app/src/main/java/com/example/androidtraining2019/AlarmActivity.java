@@ -69,7 +69,7 @@ public class AlarmActivity extends AppCompatActivity {
                                     + repeatInterval;
 
                             // If the Toggle is turned on, set the repeating alarm with
-                            // a 15 minute interval.
+                            // a 1 minute interval.
                             if (alarmManager != null) {
                                 alarmManager.setInexactRepeating
                                         (AlarmManager.ELAPSED_REALTIME,

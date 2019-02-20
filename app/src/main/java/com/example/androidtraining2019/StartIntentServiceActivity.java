@@ -20,7 +20,9 @@ public class StartIntentServiceActivity extends AppCompatActivity {
 
     private TextView textView;
     private DownloadFileFinishedReceiver receiver;
-    private String[] permisionsList = new String[]{Manifest.permission.INTERNET, Manifest.permission.WRITE_EXTERNAL_STORAGE, Manifest.permission.ACCESS_NETWORK_STATE};
+    private String[] permisionsList = new String[]{Manifest.permission.INTERNET,
+            Manifest.permission.WRITE_EXTERNAL_STORAGE,
+            Manifest.permission.ACCESS_NETWORK_STATE};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

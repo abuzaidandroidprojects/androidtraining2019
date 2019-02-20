@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         sharedpreferences = getSharedPreferences(MyPREFERENCES, Context.MODE_PRIVATE);
-        String local=sharedpreferences.getString("Local","en");
+        String local=sharedpreferences.getString("language_prefix","en");
        if(local.equals("ar")){
            Locale locale = new Locale("ar");
            Locale.setDefault(locale);
@@ -76,7 +76,7 @@ public class MainActivity extends AppCompatActivity{
                 Locale locale;
                 if (buttonView.isChecked()) {
                     language = "ar";
-                    editor.putString("Local", "ar");
+                    editor.putString("language_prefix", "ar");
                     locale = new Locale(language);
                     Locale.setDefault(locale);
                     res = getResources();
